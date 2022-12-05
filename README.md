@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+Windows 95: A Role-Playing Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a role-playing game set in the 90s, where the player takes on the role of Bill Gates and attempts to create Windows 95. The game features 10 different levels with various scenarios for Bill's quest, and a scoring system that tracks the player's progress based on the choices that they make. The game ends with either a congratulations message or a failure message, depending on the player's score.
 
-## Available Scripts
+How to Play
 
-In the project directory, you can run:
+-Install the game on your computer by cloning the Git repository and running npm install to install the dependencies.
+-Start the game by running npm start to launch the application.
+-When the game starts, you will see a menu page that looks like an old school DOS screen.
+-Click the "Start" button to begin a new game.
+-You will see the first level of the game, which will contain a description of the scenario and a set of choices that you can make.
+-Choose a response by clicking on one of the buttons.
+-The game will update your score based on the value of your choice, and it will advance to the next level.
+-Repeat steps 5-7 for each level of the game until you reach the end.
+-When the game ends, you will see a game over message and a message that either congratulates you on your success or informs you of your failure.
 
-### `npm start`
+Tips
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-Read the descriptions and choices carefully to make the best decisions for your quest.
+-Keep track of your score to see how well you are doing in your quest.
+-Try to earn a high score to unlock special rewards or unlockables in the game.
+-Have fun and enjoy the nostalgic 90s atmosphere of the game.

@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Menu from './Menu';
+import './App.css'
+import Game from './Game';
 
-function App() {
+
+const App = () => {
+  const [isGameStarted, setIsGameStarted] = useState(false);
+  const [gameProgress, setGameProgress] = useState(0);
+  const [score, setScore] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="full-screen">
+      {!isGameStarted && 
+        <Menu 
+          setIsGameStarted={setIsGameStarted} 
+          setGameProgress={setGameProgress} />}
+
+      {isGameStarted && 
+        <Game 
+          gameProgress={gameProgress} 
+          setGameProgress={setGameProgress}
+          score={score}
+          setScore={setScore} />}
     </div>
   );
 }

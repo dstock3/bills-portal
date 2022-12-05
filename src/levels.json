@@ -1,0 +1,121 @@
+[
+    {
+      "id": 1,
+      "name": "The Beginning",
+      "description": "Bill Gates is just starting out on his journey to create the best operating system ever. He must gather the right tools and resources to make his vision a reality.",
+      "choices": [
+        {
+          "text": "Gather tools and resources from your garage",
+          "result": "Bill Gates manages to find some old tools and materials in his garage. These will help him start working on his operating system.",
+          "val": 1
+        },
+        {
+          "text": "Go to the store and buy new tools and resources",
+          "result": "Bill Gates decides to go to the store and buy some new tools and materials. These will help him start working on his operating system.",
+          "val": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Designing the UI",
+      "description": "Bill Gates must now design the user interface for his operating system. He must decide on the layout, color scheme, and overall aesthetic of the UI.",
+      "choices": [
+        {
+          "text": "Use a clean and modern design",
+          "result": "Bill Gates decides to use a clean and modern design for the user interface of his operating system. This will make it easy to use and visually appealing.",
+          "val": 1
+        },
+        {
+          "text": "Use a retro and nostalgic design",
+          "result": "Bill Gates decides to use a retro and nostalgic design for the user interface of his operating system. This will appeal to users who remember the old days of computing.", 
+          "val": 0
+        }
+      ]
+    },
+    {
+        "id": 3,
+        "name": "Programming the Kernel",
+        "description": "Bill Gates must now start programming the kernel of his operating system. He must decide on the programming language and tools to use, and the overall architecture of the kernel.",
+        "choices": [
+          {
+            "text": "Use C and assembler to write the kernel",
+            "result": "Bill Gates decides to use C and assembler to write the kernel of his operating system. This will allow him to have fine-grained control over the low-level details of the kernel, but it will require a lot of effort and expertise.",
+            "val": 1
+          },
+          {
+            "text": "Use a higher-level language like C++ or Java to write the kernel",
+            "result": "Bill Gates decides to use a higher-level language like C++ or Java to write the kernel of his operating system. This will be easier and faster, but it might not be as efficient or flexible as using C and assembler.",
+            "val": 0
+          }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Testing and Debugging",
+        "description": "Bill Gates must now test and debug his operating system to make sure it works as expected. He must decide on the testing methodology and tools to use, and the overall strategy for identifying and fixing bugs.",
+        "choices": [
+          {
+            "text": "Use manual testing and debugging",
+            "result": "Bill Gates decides to use manual testing and debugging to make sure his operating system works as expected. This will be slow and error-prone, but it will allow him to have complete control over the testing process.",
+            "val": 1
+          },
+          {
+            "text": "Use automated testing and debugging tools",
+            "result": "Bill Gates decides to use automated testing and debugging tools to make sure his operating system works as expected. This will be faster and more efficient, but it might miss some bugs that could only be found through manual testing.",
+            "val": 0
+          }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Stress and Burnout",
+        "description": "Bill Gates is starting to feel the pressure as he works on his operating system. He is experiencing stress and burnout, and must decide how to deal with it.",
+        "choices": [
+          {
+            "text": "Take a break and relax",
+            "result": "Bill Gates decides to take a break and relax to cope with his stress and burnout. This will help him recharge his batteries and come back to work with a fresh mind.",
+            "val":1
+          },
+          {
+            "text": "Work harder and push through the stress",
+            "result": "Bill Gates decides to work harder and push through his stress and burnout. This will allow him to keep making progress on his operating system, but it might also make his stress and burnout worse.",
+            "val": 0
+          }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "The Computer's Voice",
+        "description": "Bill Gates is working on his operating system when suddenly, his computer starts talking to him. The computer tells him that he must destroy the competition to succeed.",
+        "choices": [
+          {
+            "text": "Listen to the computer and destroy the competition",
+            "result": "Bill Gates decides to listen to the computer and try to destroy the competition. This will allow him to eliminate his rivals and have a clear path to success, but it might also be unethical and illegal.",
+            "val": 0
+          },
+          {
+            "text": "Ignore the computer and focus on making a great operating system",
+            "result": "Bill Gates decides to ignore the computer and focus on making a great operating system. This will allow him to create a product that is innovative and valuable, but it might not be enough to beat the competition.",
+            "val": 1
+          }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "The Final Stretch",
+        "description": "Bill Gates is almost done with his operating system. He must now decide on the final touches and features to include before releasing it to the public.",
+        "choices": [
+          {
+            "text": "Include as many features as possible",
+            "result": "Bill Gates decides to include as many features as possible in his operating system. This will make it more versatile and powerful, but it might also make it slower and more complex.",
+            "val": 0
+          },
+          {
+            "text": "Focus on simplicity and ease of use",
+            "result": "Bill Gates decides to focus on simplicity and ease of use in his operating system. This will make it more accessible and user-friendly, but it might also limit its capabilities and appeal to advanced users.",
+            "val": 1
+          }
+        ]
+    }
+  ]
