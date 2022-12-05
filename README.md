@@ -36,8 +36,9 @@ The game also includes a CSS file that defines styles for the components of the 
 The styles in the CSS file are applied to the components of the game using the className attribute in the JSX code. For example, the .game class is applied to the <div> element that wraps the Game component like this:
 
 Copy code
+/*
 <div className="game">
   ...
 </div>
-
+*/
 This allows the styles in the CSS file to be applied to the components of the game, creating the desired look and feel for the game. You can modify the styles in the CSS file to suit your game's requirements, or you can add additional styles to create new looks and effects for the game.
