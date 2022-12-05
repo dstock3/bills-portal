@@ -31,14 +31,5 @@ When the player starts a new game, the App component renders a Game component, w
 
 When the player clicks on a button, the Game component updates the game progress by incrementing it by one, and it updates the score by adding the value of the choice that the user made. When the game ends, the Game component renders a game over message and a message that either congratulates the player on their success or informs them of their failure, depending on the player's score.
 
-The game also includes a CSS file that defines styles for the components of the game. The file includes a .game class that sets the font family, background color, and text color for the Game component. The file also defines styles for the game's title, description, and buttons, including font sizes, margins, padding, and hover effects.
+The game also includes a CSS file that defines styles for the components of the game. The file includes a .game class that sets the font family, background color, and text color for the Game component. The file also defines styles for the game's title, description, and buttons, including font sizes, margins, padding, and hover effects. The styles in the CSS file are applied to the components of the game using the className attribute in the JSX code. 
 
-The styles in the CSS file are applied to the components of the game using the className attribute in the JSX code. For example, the .game class is applied to the <div> element that wraps the Game component like this:
-
-Copy code
-/*
-<div className="game">
-  ...
-</div>
-*/
-This allows the styles in the CSS file to be applied to the components of the game, creating the desired look and feel for the game. You can modify the styles in the CSS file to suit your game's requirements, or you can add additional styles to create new looks and effects for the game.
