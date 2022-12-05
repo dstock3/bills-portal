@@ -20,3 +20,24 @@ Tips
 -Keep track of your score to see how well you are doing in your quest.
 -Try to earn a high score to unlock special rewards or unlockables in the game.
 -Have fun and enjoy the nostalgic 90s atmosphere of the game.
+
+How the Code Works
+
+The game is built using React, a popular JavaScript library for building user interfaces. The code is organized into components, which are reusable pieces of UI that can be composed to create the game. The main component of the game is the App component, which manages the state of the game and renders the other components.
+
+The App component includes a Menu component, which renders the menu page for the game. The Menu component uses inline styles to create the look of an old school DOS screen, and it includes a "Start" button that starts a new game when clicked.
+
+When the player starts a new game, the App component renders a Game component, which displays the current level of the game. The Game component uses a JSON file to import the metadata for the 10 different levels of the game, and it uses the find method to find the current level based on the game progress. The Game component then renders the level's name, description, and choices as buttons.
+
+When the player clicks on a button, the Game component updates the game progress by incrementing it by one, and it updates the score by adding the value of the choice that the user made. When the game ends, the Game component renders a game over message and a message that either congratulates the player on their success or informs them of their failure, depending on the player's score.
+
+The game also includes a CSS file that defines styles for the components of the game. The file includes a .game class that sets the font family, background color, and text color for the Game component. The file also defines styles for the game's title, description, and buttons, including font sizes, margins, padding, and hover effects.
+
+The styles in the CSS file are applied to the components of the game using the className attribute in the JSX code. For example, the .game class is applied to the <div> element that wraps the Game component like this:
+
+Copy code
+<div className="game">
+  ...
+</div>
+
+This allows the styles in the CSS file to be applied to the components of the game, creating the desired look and feel for the game. You can modify the styles in the CSS file to suit your game's requirements, or you can add additional styles to create new looks and effects for the game.
