@@ -5,23 +5,34 @@ This is a role-playing game set in the 90s, where the player takes on the role o
 How to Play
 
 -Install the game on your computer by cloning the Git repository and running npm install to install the dependencies.
+
 -Start the game by running npm start to launch the application.
+
 -When the game starts, you will see a menu page that looks like an old school DOS screen.
+
 -Click the "Start" button to begin a new game.
+
 -You will see the first level of the game, which will contain a description of the scenario and a set of choices that you can make.
+
 -Choose a response by clicking on one of the buttons.
+
 -The game will update your score based on the value of your choice, and it will advance to the next level.
+
 -Repeat steps 5-7 for each level of the game until you reach the end.
+
 -When the game ends, you will see a game over message and a message that either congratulates you on your success or informs you of your failure.
 
 Tips
 
 -Read the descriptions and choices carefully to make the best decisions for your quest.
+
 -Keep track of your score to see how well you are doing in your quest.
+
 -Try to earn a high score to unlock special rewards or unlockables in the game.
+
 -Have fun and enjoy the nostalgic 90s atmosphere of the game.
 
-How the Code Works
+How the App Works
 
 The game is built using React, a popular JavaScript library for building user interfaces. The code is organized into components, which are reusable pieces of UI that can be composed to create the game. The main component of the game is the App component, which manages the state of the game and renders the other components.
 
