@@ -32,9 +32,9 @@ const Game = (props) => {
           <h1>{currentLevel.name}</h1>
           <p>{currentLevel.description}</p>
 
-          {Object.keys(images).map((image, i) => (
-            parseInt(currentLevel.id) === parseInt((image)) ? 
-            <img className="level-pic" src={images[i]} alt="pixel art of Bill Gates"></img> : null
+          {Object.keys(images).map((keyname, i) => (
+            parseInt(currentLevel.id) === parseInt((keyname)) ? 
+            <img className="level-pic" src={images[keyname]} alt="pixel art of Bill Gates"></img> : null
           ))}
           
           {currentLevel.choices.map(choice => (
