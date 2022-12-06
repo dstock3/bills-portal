@@ -18,8 +18,6 @@ How to Play
 
 -The game will update your score based on the value of your choice, and it will advance to the next level.
 
--Repeat steps 5-7 for each level of the game until you reach the end.
-
 -When the game ends, you will see a game over message and a message that either congratulates you on your success or informs you of your failure.
 
 Tips
