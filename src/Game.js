@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import levels from './levels.json';
 import './style/game.css'
-import { winImg } from './assets/success.png'
-import { lossImg } from './assets/failure.png'
-import { imgOne } from './assets/1.png'
-import { imgTwo } from './assets/2.png'
-import { imgThree } from './assets/3.png'
-import { imgFour } from './assets/4.png'
-import { imgFive } from './assets/5.png'
-import { imgSix } from './assets/6.png'
-import { imgSeven } from './assets/7.png'
+import winImg from './assets/success.png'
+import lossImg from './assets/failure.png'
+import imgOne from './assets/1.png'
+import imgTwo from './assets/2.png'
+import imgThree from './assets/3.png'
+import imgFour from './assets/4.png'
+import imgFive from './assets/5.png'
+import imgSix from './assets/6.png'
+import imgSeven from './assets/7.png'
 
 const Game = (props) => {
     const [images, setImages] = useState({

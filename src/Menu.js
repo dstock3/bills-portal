@@ -1,6 +1,6 @@
 import React from 'react';
 import './style/menu.css'
-import { billImg } from './assets/menu.png'
+import billImg from './assets/menu.png'
 
 const Menu = ({ setIsGameStarted, setGameProgress }) => {
     const startNewGame = () => {
