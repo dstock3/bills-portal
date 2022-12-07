@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bills-portal/static/css/main.5f4b8f5c.css",
-    "main.js": "/bills-portal/static/js/main.c72fee1e.js",
+    "main.css": "/bills-portal/static/css/main.104fec10.css",
+    "main.js": "/bills-portal/static/js/main.1a4447fe.js",
     "static/media/success.png": "/bills-portal/static/media/success.3b4cc7b44862895b61da.png",
     "static/media/7.png": "/bills-portal/static/media/7.585e84b6c4f761ca6c38.png",
     "static/media/5.png": "/bills-portal/static/media/5.323cfda94e4565179711.png",
@@ -13,11 +13,11 @@
     "static/media/4.png": "/bills-portal/static/media/4.49784556673338af0ede.png",
     "static/media/failure.png": "/bills-portal/static/media/failure.b0edebb5506c46d0e801.png",
     "index.html": "/bills-portal/index.html",
-    "main.5f4b8f5c.css.map": "/bills-portal/static/css/main.5f4b8f5c.css.map",
-    "main.c72fee1e.js.map": "/bills-portal/static/js/main.c72fee1e.js.map"
+    "main.104fec10.css.map": "/bills-portal/static/css/main.104fec10.css.map",
+    "main.1a4447fe.js.map": "/bills-portal/static/js/main.1a4447fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f4b8f5c.css",
-    "static/js/main.c72fee1e.js"
+    "static/css/main.104fec10.css",
+    "static/js/main.1a4447fe.js"
   ]
 }
