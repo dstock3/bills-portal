@@ -36,17 +36,19 @@ const Game = (props) => {
             parseInt(currentLevel.id) === parseInt((keyname)) ? 
             <img className="level-pic" src={images[keyname]} alt="pixel art of Bill Gates"></img> : null
           ))}
-          
-          {currentLevel.choices.map(choice => (
-            <button
-              onClick={() => {
-                setGameProgress(gameProgress + 1);
-                setScore(score + choice.val);
-              }}
-            >
-              {choice.text}
-            </button>
-          ))}
+
+          <div className="game-choices">
+            {currentLevel.choices.map(choice => (
+              <button
+                onClick={() => {
+                  setGameProgress(gameProgress + 1);
+                  setScore(score + choice.val);
+                }}
+              >
+                {choice.text}
+              </button>
+            ))}
+          </div>
         </div>
       );
     } else {

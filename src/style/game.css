@@ -16,8 +16,16 @@
     font-size: 1.2em;
     margin-bottom: 20px;
 }
-  
-.game button {
+
+.game-choices {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-choices button {
+    width: 95%;
+    height: fit-content;
     font-size: 1em;
     padding: 10px;
     margin: 10px 0;
