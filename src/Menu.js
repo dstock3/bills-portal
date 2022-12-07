@@ -11,7 +11,7 @@ const Menu = ({ setIsGameStarted, setGameProgress }) => {
         <div className="menu">
             <h1>Windows 95 Adventure</h1>
             <div className="menu-img-container">
-                <img src={billImg} alt="pixel art of Bill Gates"></img>
+                <img src={billImg} className="menu-pic" alt="pixel art of Bill Gates"></img>
             </div>
         
             <div className="menu-subcontainer">
