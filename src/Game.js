@@ -54,16 +54,16 @@ const Game = (props) => {
     } else {
       return (
         <div className="game">
-            <h1>Game Over</h1>
-            <p>You have reached the end of the game.</p>
             {score > 5 ? (
               <>
-                <img src={winImg} className="result" alt="Pixel art of Bill Gates in a triumphant pose"></img>
+                <h1>Success!</h1>
+                <img src={winImg} className="level-pic" alt="Pixel art of Bill Gates in a triumphant pose"></img>
                 <p>Congratulations, your project was very successful!</p>
               </>  
               ) : (
               <>
-                <img src={lossImg} className="result" alt="Pixel art of Bill Gates with a sad expression"></img>
+                <h1>Game Over</h1>
+                <img src={lossImg} className="level-pic" alt="Pixel art of Bill Gates with a sad expression"></img>
                 <p>You have failed in your quest to create the best OS.</p>
               </>
             )}
