@@ -58,12 +58,12 @@ const Game = (props) => {
             <p>You have reached the end of the game.</p>
             {score > 5 ? (
               <>
-                <img src={winImg} alt="Pixel art of Bill Gates in a triumphant pose"></img>
+                <img src={winImg} className="result" alt="Pixel art of Bill Gates in a triumphant pose"></img>
                 <p>Congratulations, your project was very successful!</p>
               </>  
               ) : (
               <>
-                <img src={lossImg} alt="Pixel art of Bill Gates with a sad expression"></img>
+                <img src={lossImg} className="result" alt="Pixel art of Bill Gates with a sad expression"></img>
                 <p>You have failed in your quest to create the best OS.</p>
               </>
             )}
