@@ -1,9 +1,11 @@
 .menu {
+    margin-top: 15px;
     font-family: "Courier New", monospace;
+    font-weight: bold;
     font-size: 18px;
     padding: 20px;
-    height: 50%;
     width: 50%;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,5 +56,8 @@ p {
 }
 
 .menu-img-container {
-    height: 25%;
+    height: 55%;
+}
+.menu-pic {
+    height: 100%;
 }
