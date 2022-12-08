@@ -9,7 +9,7 @@ const Menu = ({ setIsGameStarted, setGameProgress }) => {
     }
     return (
         <div className="menu">
-            <h1>Windows 95 Adventure</h1>
+            <h1>Bill's Adventure</h1>
             <div className="menu-img-container">
                 <img src={billImg} className="menu-pic" alt="pixel art of Bill Gates"></img>
             </div>
