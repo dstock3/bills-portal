@@ -26,7 +26,7 @@ const Game = (props) => {
   
     const currentLevel = levels.find(level => level.id === gameProgress);
 
-    if (currentLevel & images) {
+    if (currentLevel) {
       return (
         <div className="game">
           <h1>{currentLevel.name}</h1>
@@ -51,7 +51,7 @@ const Game = (props) => {
           </div>
         </div>
       );
-    } else if (images) {
+    } else {
       return (
         <div className="game">
             {score > 5 ? (

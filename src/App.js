@@ -9,12 +9,6 @@ const App = () => {
   const [gameProgress, setGameProgress] = useState(0);
   const [score, setScore] = useState(0);
 
-  useEffect(()=> {
-    if (!isGameStarted) {
-      setGameProgress(0)
-    }
-  }, [isGameStarted])
-
   return (
     <div className="full-screen">
       {!isGameStarted && 
