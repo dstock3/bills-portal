@@ -5,8 +5,8 @@
     color: #fff;
     padding: 20px;
     margin: 20px auto;
-    max-width: 600px;
-    max-height: 600px;
+    width: 50%;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,10 +21,11 @@
 .game p {
     font-size: 1.2em;
     margin-bottom: 20px;
+    width: 50%;
 }
 
 .game-choices {
-    width: 75%;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,6 +48,12 @@
     color: #000;
 }
 
+.level-pic-container {
+    height: 55%;
+
+}
+
 .level-pic {
-    height: 25%;
+    height: 100%;
+    
 }

@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Menu from './Menu';
 import './App.css'
 import Game from './Game';
-
 
 const App = () => {
   const [isGameStarted, setIsGameStarted] = useState(false);

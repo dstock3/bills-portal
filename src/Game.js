@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import levels from './levels.json';
 import './style/game.css'
 import winImg from './assets/success.png'
@@ -12,19 +12,28 @@ import imgSix from './assets/6.png'
 import imgSeven from './assets/7.png'
 
 const Game = (props) => {
-    const [images, setImages] = useState({
-      1: imgOne,
-      2: imgTwo,
-      3: imgThree,
-      4: imgFour,
-      5: imgFive,
-      6: imgSix,
-      7: imgSeven
-    })
+    const [images, setImages] = useState({})
 
     const { gameProgress, setGameProgress, score, setScore, setIsGameStarted } = props;
   
     const currentLevel = levels.find(level => level.id === gameProgress);
+
+    useEffect(() => {
+      let thisLevel = levels.find(level => level.id === gameProgress);
+  
+      if (thisLevel) {
+        setImages({
+          1: imgOne,
+          2: imgTwo,
+          3: imgThree,
+          4: imgFour,
+          5: imgFive,
+          6: imgSix,
+          7: imgSeven
+        });
+      }
+    }, [gameProgress]);
+  
 
     if (currentLevel) {
       return (
@@ -32,10 +41,12 @@ const Game = (props) => {
           <h1>{currentLevel.name}</h1>
           <p>{currentLevel.description}</p>
 
-          {Object.keys(images).map((keyname, i) => (
-            parseInt(currentLevel.id) === parseInt((keyname)) ? 
-            <img className="level-pic" src={images[keyname]} alt="pixel art of Bill Gates"></img> : null
-          ))}
+          <div className="level-pic-container">
+            {Object.keys(images).map((keyname, i) => (
+                parseInt(currentLevel.id) === parseInt((keyname)) ? 
+                <img className="level-pic" src={images[keyname]} alt="pixel art of Bill Gates" loading="lazy"></img> : null
+              ))}
+          </div>
 
           <div className="game-choices">
             {currentLevel.choices.map(choice => (
