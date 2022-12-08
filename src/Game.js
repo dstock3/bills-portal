@@ -68,14 +68,19 @@ const Game = (props) => {
             {score > 5 ? (
               <>
                 <h1>Success!</h1>
-                <img src={winImg} className="level-pic" alt="Pixel art of Bill Gates in a triumphant pose"></img>
+                <div className="level-pic-container">
+                  <img src={winImg} className="level-pic" alt="Pixel art of Bill Gates in a triumphant pose"></img>
+                </div>
                 <p>Congratulations, your project was very successful!</p>
                 <button onClick={()=>setIsGameStarted(false)}>Play Again</button>
               </>  
               ) : (
               <>
                 <h1>Game Over</h1>
-                <img src={lossImg} className="level-pic" alt="Pixel art of Bill Gates with a sad expression"></img>
+                <div className="level-pic-container">
+                  <img src={lossImg} className="level-pic" alt="Pixel art of Bill Gates with a sad expression"></img>
+                </div>
+
                 <p>You have failed in your quest to create the best OS.</p>
                 <button onClick={()=>setIsGameStarted(false)}>Play Again</button>
               </>
