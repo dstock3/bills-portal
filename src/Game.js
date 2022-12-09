@@ -81,10 +81,14 @@ const Game = (props) => {
         
           <div className="progress-container">
             <div className="progress-bar">
-              {(progressBar).map((prog) => (
-                <li className={"progress " + prog}>
+              {(progressBar).map((prog, i) => (
+                i === 6 ?
+                  <li className={"progress last " + prog}>
                   
-                </li>
+                  </li> : 
+                  <li className={"progress " + prog}>
+                  
+                  </li>
               ))}
             </div>
           </div>
