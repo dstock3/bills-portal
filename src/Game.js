@@ -33,6 +33,11 @@ const Game = (props) => {
         });
       }
     }, [gameProgress]);
+
+    useEffect(()=> {
+      console.log(score)
+
+    }, [score])
   
 
     if (currentLevel) {
