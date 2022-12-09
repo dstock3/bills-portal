@@ -15,11 +15,10 @@ const Menu = ({ setIsGameStarted, setGameProgress }) => {
             </div>
         
             <div className="menu-subcontainer">
-                <p>In the 90s, Bill Gates is on a mission to create the best operating system ever: Windows 95. Join him on his journey as he works tirelessly to overcome challenges and obstacles, and compete with rival companies to create the most revolutionary operating system of all time. Are you ready to join Bill Gates and make history?</p>
+                <p className="game-desc">In the 90s, Bill Gates is on a mission to create the best operating system ever: Windows 95. Join him on his journey as he works tirelessly to overcome challenges and obstacles, and compete with rival companies to create the most revolutionary operating system of all time. Are you ready to join Bill Gates and make history?</p>
 
                 <div className="menu-button-container">
                     <button onClick={startNewGame}>Start New Game</button>
-                    <button>Load Saved Game</button>
                     <button>Settings</button>
                 </div>
 

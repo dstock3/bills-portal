@@ -51,8 +51,9 @@
     color: #000;
 }
 
-p {
-    margin-bottom: 50px;
+.game-desc {
+    width: 75%;
+    margin-bottom: 25px;
 }
 
 .menu-img-container {

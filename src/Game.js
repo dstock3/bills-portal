@@ -23,13 +23,10 @@ const Game = (props) => {
     useEffect(()=> {
       if (currentLevel) {
         let prog = progressBar
-        for (let i = 0; i < parseInt(currentLevel.id) -1; i++) {
+        for (let i = 0; i < parseInt(currentLevel.id); i++) {
           prog[i] = "filled"
-  
         }
-  
         setProgressBar(prog)
-
       }
     }, [gameProgress])
 
@@ -59,14 +56,15 @@ const Game = (props) => {
       return (
         <div className="game">
           <h1>{currentLevel.name}</h1>
-          <p>{currentLevel.description}</p>
-
+          
           <div className="level-pic-container">
             {Object.keys(images).map((keyname, i) => (
                 parseInt(currentLevel.id) === parseInt((keyname)) ? 
                 <img className="level-pic" src={images[keyname]} alt="pixel art of Bill Gates" loading="lazy"></img> : null
               ))}
           </div>
+
+          <p className="level-desc">{currentLevel.description}</p>
 
           <div className="game-choices">
             {currentLevel.choices.map(choice => (
@@ -101,7 +99,7 @@ const Game = (props) => {
                 <div className="level-pic-container">
                   <img src={winImg} className="level-pic" alt="Pixel art of Bill Gates in a triumphant pose"></img>
                 </div>
-                <p>Congratulations, your project was very successful!</p>
+                <p className="level-desc">Congratulations, your project was very successful!</p>
                 <button onClick={()=>restartGame()}>Play Again</button>
               </>  
               ) : (
@@ -111,7 +109,7 @@ const Game = (props) => {
                   <img src={lossImg} className="level-pic" alt="Pixel art of Bill Gates with a sad expression"></img>
                 </div>
 
-                <p>You have failed in your quest to create the best OS.</p>
+                <p className="level-desc">You have failed in your quest to create the best OS.</p>
                 <button onClick={()=>restartGame()}>Play Again</button>
               </>
             )}
