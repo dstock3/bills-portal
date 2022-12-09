@@ -57,3 +57,20 @@
     height: 100%;
     
 }
+
+.progress-bar {
+    display: flex;
+    background-color: #fff;
+    border: 3px solid white;
+    list-style-type: none;
+}
+
+.progress {
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;;
+}
+
+.filled {
+    background-color: black;
+}
