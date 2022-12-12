@@ -10,18 +10,20 @@ const Settings = ({setSettings, difficulty, setDifficulty}) => {
           <h3>Difficulty</h3>
           <div className="difficulty-container">
             {difficulty === 3 ? 
-              <div className="difficulty selected">Easy</div> :
-              <div className="difficulty" onClick={()=>setDifficulty(3)}>Easy</div>}
+              <div className="settings-button difficulty selected">Easy</div> :
+              <div className="settings-button difficulty" onClick={()=>setDifficulty(3)}>Easy</div>}
             {difficulty === 5 ? 
-              <div className="difficulty selected">Medium</div> :
-              <div className="difficulty" onClick={()=>setDifficulty(5)}>Medium</div>}
+              <div className="settings-button difficulty selected">Medium</div> :
+              <div className="settings-button difficulty" onClick={()=>setDifficulty(5)}>Medium</div>}
             {difficulty === 7 ? 
-              <div className="difficulty selected">Hard</div> :
-              <div className="difficulty" onClick={()=>setDifficulty(7)}>Hard</div>}
+              <div className="settings-button difficulty selected">Hard</div> :
+              <div className="settings-button difficulty" onClick={()=>setDifficulty(7)}>Hard</div>}
           </div>
         </div>
-
-        <div className="back" onClick={()=>setSettings(false)}>Go Back</div>
+        <div className="back-button-container">
+          <div className="settings-button back" onClick={()=>setSettings(false)}>Go Back</div>
+        </div>     
+        
     </div>
   )
 }

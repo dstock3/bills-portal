@@ -31,7 +31,13 @@
     align-items: center;
 }
 
-.difficulty {
+.back-button-container {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.settings-button {
     font-family: "Courier New", monospace;
     font-size: 18px;
     background-color: #000;
@@ -45,8 +51,10 @@
 .selected {
     background-color:#fff;
     color: #000;
+}
 
-
+.back {
+    border: 3px solid #fff;
 }
 
 
