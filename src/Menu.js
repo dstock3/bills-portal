@@ -2,7 +2,7 @@ import React from 'react';
 import './style/menu.css'
 import billImg from './assets/menu.png'
 
-const Menu = ({ setIsGameStarted, setGameProgress }) => {
+const Menu = ({ setIsGameStarted, setGameProgress, setSettings }) => {
     const startNewGame = () => {
         setIsGameStarted(true);
         setGameProgress(1);
@@ -19,7 +19,7 @@ const Menu = ({ setIsGameStarted, setGameProgress }) => {
 
                 <div className="menu-button-container">
                     <button onClick={startNewGame}>Start New Game</button>
-                    <button>Settings</button>
+                    <button onClick={() => setSettings(true)}>Settings</button>
                 </div>
 
             </div>

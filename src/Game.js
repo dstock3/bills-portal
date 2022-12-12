@@ -97,7 +97,7 @@ const Game = (props) => {
     } else {
       return (
         <div className="game">
-            {score > 5 ? (
+            {score > props.difficulty ? (
               <>
                 <h1>Success!</h1>
                 <div className="level-pic-container">
