@@ -3,7 +3,7 @@ import Menu from './Menu';
 import './App.css'
 import Game from './Game';
 import Settings from './Settings';
-import backgroundMusic from './assets/background_music.mp3';
+import backgroundMusic from './assets/micro.mp3';
 
 const App = () => {
   const [isGameStarted, setIsGameStarted] = useState(false);
@@ -22,6 +22,10 @@ const App = () => {
   useEffect(() => {
     if (isGameStarted && isSoundEnabled) {
       audioElement.current.play();
+    }
+
+    if (!isSoundEnabled) {
+      audioElement.current.pause();
     }
   }, [isGameStarted, isSoundEnabled]);
 
