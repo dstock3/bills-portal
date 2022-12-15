@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Menu from './Menu';
 import './App.css'
 import Game from './Game';
 import Settings from './Settings';
+import backgroundMusic from './assets/background_music.mp3';
 
 const App = () => {
   const [isGameStarted, setIsGameStarted] = useState(false);
@@ -12,9 +13,17 @@ const App = () => {
   const [difficulty, setDifficulty] = useState(5);
   const [isSoundEnabled, setIsSoundEnabled] = useState(true)
 
+  const audioElement = useRef(null);
+
   useEffect(()=> {
     if (!isGameStarted) setScore(0)
   }, [isGameStarted])
+
+  useEffect(() => {
+    if (isGameStarted && isSoundEnabled) {
+      audioElement.current.play();
+    }
+  }, [isGameStarted, isSoundEnabled]);
 
   return (
     <div className="full-screen">
@@ -41,6 +50,7 @@ const App = () => {
           setIsGameStarted={setIsGameStarted} 
           difficulty={difficulty} />}
 
+      <audio ref={audioElement} src={backgroundMusic} loop />
     </div>
   );
 }
