@@ -6,3 +6,10 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media screen and (max-width: 500px) {
+  .full-screen {
+    flex-direction: unset;
+    align-items: unset;
+  }
+}
