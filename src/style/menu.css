@@ -67,7 +67,7 @@
 @media screen and (max-width: 500px) {
   .menu {
     width: 95vw;
-    height: 95vh;
+    height: fit-content;
   }
 
   .menu-subcontainer {
@@ -75,19 +75,6 @@
   }
 
   .menu-img-container {
-    max-height: 20%;
-  }
-}
-  
-@media screen and (min-width: 501px) and (max-width: 1000px) {
-  .menu {
-    width: 70%;
-    height: 100vh;
-  }
-}
-  
-@media screen and (min-width: 1001px) {
-  .menu {
-    width: 50%;
+    height: 40vh;
   }
 }

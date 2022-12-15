@@ -9,6 +9,7 @@
 
 @media screen and (max-width: 500px) {
   .full-screen {
+    justify-content: center;
     flex-direction: unset;
     align-items: unset;
   }

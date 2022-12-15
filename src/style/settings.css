@@ -73,4 +73,18 @@
     margin-bottom: 15px;
 }
 
+@media screen and (max-width: 500px) {
+    .settings {
+      width: 90vw;
+      height: 85vh;
+    }
+
+    .settings-container {
+        width: 95vw;
+        height: 85%;   
+    }
+
+}
+  
+
 

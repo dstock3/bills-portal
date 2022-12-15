@@ -80,3 +80,26 @@
 .filled {
     background-color: rgb(85, 105, 185);
 }
+
+@media screen and (max-width: 500px) {
+    .game {
+        width: 100vw;
+        height: fit-content;
+        padding: unset;
+    }
+
+    .level-pic-container {
+        height: 65vw;
+    }
+
+    .level-desc {
+        width: 90%;
+    }
+
+    .progress-bar {
+        margin-bottom: 20px;
+    }
+
+
+}
+    
