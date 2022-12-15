@@ -1,11 +1,28 @@
 import React from 'react'
 import './style/settings.css'
 
-const Settings = ({setSettings, difficulty, setDifficulty}) => {
+const Settings = ({setSettings, difficulty, setDifficulty, isSoundEnabled}) => {
   return (
     <div className="settings">
       <div className="settings-container">
         <h1>Settings</h1>
+
+        <div className="settings-subcontainer">
+          <h3>Sound</h3>
+          <div className="sound-options-container">
+            {isSoundEnabled ? 
+              <>
+                <div className="settings-button sound-enabled selected">ON</div>
+                <div className="settings-button sound-enabled">OFF</div>
+              </> :
+              <>
+                <div className="settings-button sound-enabled">ON</div>
+                <div className="settings-button sound-enabled selected">OFF</div>
+              </>
+             }
+          </div>
+        </div>
+
         <div className="settings-subcontainer">
           <h3>Difficulty</h3>
           <div className="difficulty-container">
