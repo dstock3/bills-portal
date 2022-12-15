@@ -4,8 +4,8 @@ import './style/settings.css'
 const Settings = ({setSettings, difficulty, setDifficulty}) => {
   return (
     <div className="settings">
+      <div className="settings-container">
         <h1>Settings</h1>
-
         <div className="settings-subcontainer">
           <h3>Difficulty</h3>
           <div className="difficulty-container">
@@ -22,8 +22,8 @@ const Settings = ({setSettings, difficulty, setDifficulty}) => {
         </div>
         <div className="back-button-container">
           <div className="settings-button back" onClick={()=>setSettings(false)}>Go Back</div>
-        </div>     
-        
+        </div> 
+      </div>
     </div>
   )
 }
