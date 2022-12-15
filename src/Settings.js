@@ -1,7 +1,7 @@
 import React from 'react'
 import './style/settings.css'
 
-const Settings = ({setSettings, difficulty, setDifficulty, isSoundEnabled}) => {
+const Settings = ({setSettings, difficulty, setDifficulty, isSoundEnabled, setIsSoundEnabled}) => {
   return (
     <div className="settings">
       <div className="settings-container">
@@ -13,10 +13,10 @@ const Settings = ({setSettings, difficulty, setDifficulty, isSoundEnabled}) => {
             {isSoundEnabled ? 
               <>
                 <div className="settings-button sound-enabled selected">ON</div>
-                <div className="settings-button sound-enabled">OFF</div>
+                <div className="settings-button sound-enabled" onClick={()=> setIsSoundEnabled(false)}>OFF</div>
               </> :
               <>
-                <div className="settings-button sound-enabled">ON</div>
+                <div className="settings-button sound-enabled" onClick={()=> setIsSoundEnabled(true)}>ON</div>
                 <div className="settings-button sound-enabled selected">OFF</div>
               </>
              }

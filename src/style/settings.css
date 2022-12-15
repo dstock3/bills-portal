@@ -17,7 +17,7 @@
 
 .settings-container {
     width: 50%;
-    height: 50%;
+    height: 65%;
     border: 3px solid #fff;
     background-color: #000;
     display: flex;
@@ -40,6 +40,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.sound-options-container {
+    display: flex;
 }
 
 .back-button-container {
