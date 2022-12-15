@@ -10,6 +10,7 @@ const App = () => {
   const [settings, setSettings] = useState(false)
   const [score, setScore] = useState(0);
   const [difficulty, setDifficulty] = useState(5);
+  const [isSoundEnabled, setIsSoundEnabled] = useState(true)
 
   useEffect(()=> {
     if (!isGameStarted) setScore(0)
@@ -27,7 +28,9 @@ const App = () => {
         <Settings 
           setSettings={setSettings}
           difficulty={difficulty}
-          setDifficulty={setDifficulty} />}
+          setDifficulty={setDifficulty}
+          isSoundEnabled={isSoundEnabled}
+          setIsSoundEnabled={setIsSoundEnabled} />}
 
       {isGameStarted && 
         <Game 
