@@ -1,4 +1,4 @@
-Windows 95: A Role-Playing Game
+Bill's Adventure: A Role-Playing Game
 
 This is a role-playing game set in the 90s, where the player takes on the role of Bill Gates and attempts to create Windows 95. The game features 10 different levels with various scenarios for Bill's quest, and a scoring system that tracks the player's progress based on the choices that they make. The game ends with either a congratulations message or a failure message, depending on the player's score.
 
