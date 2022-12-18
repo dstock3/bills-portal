@@ -10,6 +10,7 @@ import imgFour from './assets/4.png'
 import imgFive from './assets/5.png'
 import imgSix from './assets/6.png'
 import imgSeven from './assets/7.png'
+import ProgBar from './ProgBar';
 
 const Game = (props) => {
     const [images, setImages] = useState({})
@@ -78,16 +79,9 @@ const Game = (props) => {
               </button>
             ))}
           </div>
-        
-          <div className="progress-container">
-            <div className="progress-bar">
-              {(progressBar).map((prog, i) => (
-                i === 6 ?
-                  <li className={"progress last " + prog}></li> : 
-                  <li className={"progress " + prog}></li>
-              ))}
-            </div>
-          </div>
+
+          <ProgBar progressBar={progressBar}/>
+
         </div>
       );
     } else {
