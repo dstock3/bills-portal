@@ -31,7 +31,7 @@ const App = () => {
 
   return (
     <div className="full-screen">
-      {!isGameStarted & !settings && 
+      {!isGameStarted && !settings && 
         <Menu 
           setIsGameStarted={setIsGameStarted} 
           setGameProgress={setGameProgress}

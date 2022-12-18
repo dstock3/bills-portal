@@ -103,6 +103,7 @@
         width: 100vw;
         height: fit-content;
         padding: unset;
+        padding-bottom: 15%;
     }
 
     .level-pic-container {
@@ -116,7 +117,6 @@
     .progress-bar {
         margin-bottom: 20px;
     }
-
 
 }
     
